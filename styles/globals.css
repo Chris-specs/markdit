@@ -1,16 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.markdown-viewer h1 {
+    font-size: 32px;
+}
+.markdown-viewer h2 {
+    font-size: 24px;
+}
+.markdown-viewer h3 {
+    font-size: 32px;
+}
+.markdown-viewer h4 {
+    font-size: 32px;
+}
+.markdown-viewer h5 {
+    font-size: 32px;
+}
+.markdown-viewer h6 {
+    font-size: 32px;
+}
+.markdown-viewer p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.markdown-viewer a {
+    font-size: 16px;
+    color: #58a6ff;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.markdown-viewer h1,
+.markdown-viewer h2,
+.markdown-viewer h3,
+.markdown-viewer h4,
+.markdown-viewer h5,
+.markdown-viewer h6 {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    border-bottom: 1px solid #21262d3b;
 }
