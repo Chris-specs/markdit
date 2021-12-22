@@ -26,12 +26,6 @@ export default function Home() {
                         content='Make, preview and download README.MD and any markdown files
                         fast'
                     />
-                    <link rel='icon' href='/favicon.ico' />
-                    <link
-                        href='/apple-touch-icon.png'
-                        rel='apple-touch-icon'
-                        sizes='180x180'
-                    />
                 </Head>
                 <section className='w-full h-auto flex justify-center pt-20'>
                     <div className='w-full max-w-screen-2xl h-auto px-6 md:px-10 lg:px-20 xl:px-44'>
