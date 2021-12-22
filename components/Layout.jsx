@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { IoDownloadOutline } from 'react-icons/io5';
+import { IoDownloadOutline, IoLogoGithub, IoHeart, IoHeartOutline } from 'react-icons/io5';
 
 const Layout = ({ children, content }) => {
-
     const downloadMarkdown = () => {
         const element = document.createElement('a');
         const file = new Blob([content], {
@@ -21,13 +20,13 @@ const Layout = ({ children, content }) => {
                 <div className='w-full max-w-screen-2xl h-auto px-6 md:px-10 lg:px-20 xl:px-44'>
                     <div className='flex h-14 lg:h-16 justify-between items-center'>
                         <Link href='/'>
-                            <div className='w-14 h-12 lg:w-8 lg:h-8 relative'>
+                            <a className='w-14 h-12 relative'>
                                 <Image
                                     src='/assets/images/logo.svg'
                                     layout='fill'
                                     alt='Logo'
                                 />
-                            </div>
+                            </a>
                         </Link>
                         <button
                             onClick={downloadMarkdown}
@@ -40,68 +39,30 @@ const Layout = ({ children, content }) => {
                     </div>
                 </div>
             </header>
-            <main className='z-0 relative'>{children}</main>
-            <footer className='w-full flex justify-center items-center py-4 border-t border-gray-200'>
+            <main>{children}</main>
+            <footer className='w-full flex justify-center items-center bg-dark-brand py-4 border-t border-gray-200'>
                 <div className='w-full max-w-screen-2xl h-auto px-6 md:px-10 lg:px-20 xl:px-44'>
-                    <div className='flex flex-col lg:flex-row lg:justify-between py-4 gap-5'>
-                        <div className='flex flex-col justify-start gap-3'>
-                            <p className='text-3xl lg:text-2xl font-semibold text-blue-brand-100'>
-                                coinpare
-                            </p>
-                            <p className='text-sm text-gray-brand-100'>
-                                Get information and compare <br /> prices of the
-                                main cryptocurrencies.
-                            </p>
-                        </div>
-                        <div className='flex flex-col lg:flex-row gap-5 lg:gap-14'>
-                            <div className='flex flex-col justify-start gap-1'>
-                                <p className='text-lg font-medium text-blue-brand-50'>
-                                    Tools
+                    <div className='flex justify-center py-4 gap-5'>
+                        <ul className='flex flex-col items-center gap-1'>
+                            <li className='w-full flex justify-center items-center'>
+                                <Link href='https://github.com/Chris-specs/markdit'>
+                                    <a className='flex flex-col items-center font-medium text-white'>
+                                        <IoLogoGithub />
+                                        Markdit
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className='w-full flex justify-center items-center'>
+                                <p className='flex justify-center items-center text-sm font-light text-white gap-1'>
+                                    Made with <IoHeartOutline /> by{' '}
+                                    <Link href='https://github.com/Chris-specs'>
+                                        <a className='font-medium'>
+                                            Christian Sanchez
+                                        </a>
+                                    </Link>
                                 </p>
-                                <ul>
-                                    <li>
-                                        <Link href='/compare'>
-                                            <a className='text-blue-brand-50 opacity-70'>
-                                                Compare
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href='/news'>
-                                            <a className='text-blue-brand-50 opacity-70'>
-                                                News
-                                            </a>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className='flex flex-col justify-start gap-1'>
-                                <p className='text-lg font-medium text-blue-brand-50'>
-                                    Information
-                                </p>
-                                <ul>
-                                    <li>
-                                        <Link href='/about'>
-                                            <a className='text-blue-brand-50 opacity-70'>
-                                                About
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href='/faqs'>
-                                            <a className='text-blue-brand-50 opacity-70'>
-                                                FAQ´s
-                                            </a>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex items-center lg:mt-5'>
-                        <p className='text-xs text-gray-brand-100'>
-                            2021 Coinpare
-                        </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </footer>

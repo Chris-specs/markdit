@@ -44,6 +44,15 @@ a {
 .markdown-viewer h6 {
     font-size: 32px;
 }
+.markdown-viewer div p {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+}
 .markdown-viewer p {
     display: block;
     font-size: 16px;
