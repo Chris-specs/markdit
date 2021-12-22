@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { IoDownloadOutline, IoLogoGithub, IoHeart, IoHeartOutline } from 'react-icons/io5';
+import {
+    IoDownloadOutline,
+    IoLogoGithub,
+    IoHeart,
+    IoHeartOutline,
+} from 'react-icons/io5';
 
 const Layout = ({ children, content }) => {
     const downloadMarkdown = () => {
@@ -23,15 +28,6 @@ const Layout = ({ children, content }) => {
                             <a className='w-14 h-12 relative'>
                                 <Image
                                     src='/assets/images/logo.svg'
-                                    layout='fill'
-                                    alt='Logo'
-                                />
-                            </a>
-                        </Link>
-                        <Link href='/'>
-                            <a className='w-14 h-12 relative'>
-                                <Image
-                                    src='/favicon.ico'
                                     layout='fill'
                                     alt='Logo'
                                 />
