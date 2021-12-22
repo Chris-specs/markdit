@@ -11,6 +11,7 @@ module.exports = {
                 editor: 'Menlo, Monaco, "Courier New", monospace',
             },
             colors: {
+                'green-brand': '#2EC4B6',
                 'dark-brand': '#1e1e1e',
             },
         },
