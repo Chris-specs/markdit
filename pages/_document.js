@@ -4,8 +4,8 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <link rel='icon' href='/../public/favicon.ico' />
-                <link href='/../public/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'/>
+                <link rel='icon' href='../public/favicon.ico' />
+                <link href='../public/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'/>
                 <link rel='preconnect' href='https://fonts.googleapis.com' />
                 <link
                     rel='preconnect'
