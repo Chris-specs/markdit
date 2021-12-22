@@ -23,9 +23,9 @@ export default function Home() {
                     <title>Markdit</title>
                     <meta
                         name='description'
-                        content='Make and preview README.MD and any markdown files fast'
+                        content='Make, preview and download README.MD and any markdown files
+                        fast'
                     />
-                    <link rel='icon' href='/favicon.ico' />
                 </Head>
                 <section className='w-full h-auto flex justify-center pt-20'>
                     <div className='w-full max-w-screen-2xl h-auto px-6 md:px-10 lg:px-20 xl:px-44'>
@@ -33,8 +33,8 @@ export default function Home() {
                             Markdit
                         </h1>
                         <h2 className='text-sm lg:text-base text-dark-brand text-center mb-10'>
-                            Make, preview and download README.MD and any markdown files
-                            fast.
+                            Make, preview and download README.MD and any
+                            markdown files fast.
                         </h2>
                         <div className='flex flex-col lg:flex-row items-center gap-6 py-6'>
                             <div className='w-full h-[40rem] xl:h-[45.5rem] rounded-lg overflow-hidden border border-gray-700'>
