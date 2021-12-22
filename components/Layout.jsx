@@ -33,15 +33,6 @@ const Layout = ({ children, content }) => {
                                 />
                             </a>
                         </Link>
-                        <Link href='/'>
-                            <a className='w-14 h-12 relative'>
-                                <Image
-                                    src='/logo.svg'
-                                    layout='fill'
-                                    alt='Logo'
-                                />
-                            </a>
-                        </Link>
                         <button
                             onClick={downloadMarkdown}
                             className='w-32 h-10 flex justify-center items-center gap-2 bg-green-brand rounded-lg'
