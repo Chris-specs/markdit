@@ -51,7 +51,7 @@ const Layout = ({ children, content }) => {
                         <ul className='flex flex-col items-center gap-1'>
                             <li className='w-full flex justify-center items-center'>
                                 <Link href='https://github.com/Chris-specs/markdit'>
-                                    <a className='flex flex-col items-center font-medium text-white'>
+                                    <a target='_blank' className='flex flex-col items-center font-medium text-white'>
                                         <IoLogoGithub />
                                         Markdit
                                     </a>
@@ -61,7 +61,7 @@ const Layout = ({ children, content }) => {
                                 <p className='flex justify-center items-center text-sm font-light text-white gap-1'>
                                     Made with <IoHeartOutline /> by{' '}
                                     <Link href='https://github.com/Chris-specs'>
-                                        <a className='font-medium'>
+                                        <a target='_blank' className='font-medium'>
                                             Christian Sanchez
                                         </a>
                                     </Link>
