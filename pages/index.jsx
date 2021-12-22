@@ -27,12 +27,12 @@ export default function Home() {
                         fast'
                     />
                 </Head>
-                <section className='w-full h-auto flex justify-center pt-20'>
+                <section className='w-full h-auto flex justify-center pt-24'>
                     <div className='w-full max-w-screen-2xl h-auto px-6 md:px-10 lg:px-20 xl:px-44'>
                         <h1 className='text-3xl lg:text-4xl font-bold text-dark-brand text-center mb-6'>
                             Markdit
                         </h1>
-                        <h2 className='text-sm lg:text-base text-dark-brand text-center mb-10'>
+                        <h2 className='text-sm lg:text-base text-dark-brand text-center mb-6'>
                             Make, preview and download README.MD and any
                             markdown files fast.
                         </h2>
