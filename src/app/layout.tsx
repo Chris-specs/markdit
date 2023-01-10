@@ -2,7 +2,6 @@
 import Link from 'next/link'
 // Components
 import InnerContainer from '@components/layout/InnerContainer'
-import Button from '@components/Button'
 import Logo from '@components/svg/Logo'
 import GitHub from '@components/svg/GitHub'
 // Fonts

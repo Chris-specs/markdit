@@ -1,10 +1,10 @@
+// Components
+import Editor from '@components/Editor'
 
-const CreatePage = () => {
+export default function CreatePage() {
     return (
-        <>
-            <div>CreatePage</div>
-        </>
+        <section>
+            <Editor />
+        </section>
     )
 }
-
-export default CreatePage
