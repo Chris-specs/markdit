@@ -60,7 +60,7 @@ const Footer = () => (
 
 export default function RootLayout({ children }: Layout) {
     return (
-        <html className={inter.variable}>
+        <html lang='en' className={inter.variable}>
             <head />
             <body>
                 <Header />
