@@ -2,9 +2,10 @@
 
 <div align="center">
 
-  <!-- ### <img src="https://github.com/Chris-specs/markdit/blob/master/public/assets/images/logo.svg" height="250px"/> -->
+  ### <img src="https://raw.githubusercontent.com/Chris-specs/markdit/main/public/images/logo.png" height="250px"/>
 
   [![NextS](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
   [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
   [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
   
@@ -18,21 +19,20 @@ Make, preview and download README.MD and any markdown files fast.
  - [TailwindCSS](https://tailwindcss.com/)
  - [Monaco Editor](https://microsoft.github.io/monaco-editor/)
  - [Markdown It](https://github.com/markdown-it/markdown-it)
- - [React Icons](https://react-icons.github.io/react-icons/)
   
 ## Instructions
 
-Install dependencies with yarn ⚙️
+Install dependencies with pnpm ⚙️
 
 ```bash 
-  yarn install
+  pnpm install
 ```
 
 Run project for development 🚧
 
 ```bash 
-  yarn dev
+  pnpm dev
 ```
 
 ## 
-Made with ❤️ by [Christian](https://github.com/Chris-specs)
+Made with 🔥 & ⌨️ by [Christian](https://github.com/Chris-specs)
