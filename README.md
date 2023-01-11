@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ### <img src="https://raw.githubusercontent.com/Chris-specs/markdit/main/public/images/logo.png" height="250px"/>
+  ### <img src="https://raw.githubusercontent.com/Chris-specs/markdit/main/public/images/logo.png" width="600px"/>
 
   [![NextS](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
