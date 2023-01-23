@@ -1,8 +1,7 @@
 // Common
-import Link from "next/link"
+import Link from 'next/link'
 
 export default function Button({ children, href, download, onClick }: Button) {
-
     if (download) {
         const handleClick = () => {
             onClick && onClick()
@@ -19,7 +18,7 @@ export default function Button({ children, href, download, onClick }: Button) {
             </button>
         )
     }
-    
+
     return (
         <Link
             href={href!}
