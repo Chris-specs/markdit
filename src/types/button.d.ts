@@ -1,5 +1,6 @@
 interface Button {
     children: string
-    href: string
+    href?: string
+    onClick?: () => void
     download?: boolean
 }
