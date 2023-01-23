@@ -9,7 +9,7 @@ export default function Head() {
             <meta property="og:title" content="Markdit" />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://markdit.vercel.app/" />
-            <meta property="og:image" content="https://markdit.vercel.app/images/logo.png" />
+            <meta property="og:image" content="https://markdit.vercel.app/images/og.png" />
         </>
     )
 }
