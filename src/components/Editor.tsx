@@ -6,6 +6,8 @@ import { useState } from 'react';
 import MonacoEditor from '@monaco-editor/react';
 // Markdown
 import MarkdownIt from 'markdown-it';
+// Utils
+import MDContent from '@utils/state';
 
 export default function Editor() {
 
@@ -19,9 +21,8 @@ export default function Editor() {
     });
 
     const handleChange = (value: string | undefined) => {
-        if (value) {
-            setContent(value)
-        }
+        setContent(value ? value : '')
+        MDContent.setMDContent(value ? value : '')
     }
 
     return (
