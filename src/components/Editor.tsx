@@ -1,27 +1,27 @@
 'use client'
 
 // Common
-import { useState } from 'react';
+import { useState } from 'react'
 // Monaco Editor
-import MonacoEditor from '@monaco-editor/react';
+import MonacoEditor from '@monaco-editor/react'
 // Markdown
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from 'markdown-it'
+// Utils
+import MDContent from '@utils/state'
 
 export default function Editor() {
-
-    const [content, setContent] = useState('# Title');
+    const [content, setContent] = useState('# Title')
 
     const md = new MarkdownIt({
         html: true,
         breaks: true,
         linkify: true,
-        xhtmlOut: true,
-    });
+        xhtmlOut: true
+    })
 
     const handleChange = (value: string | undefined) => {
-        if (value) {
-            setContent(value)
-        }
+        setContent(value || '')
+        MDContent.setMDContent(value || '')
     }
 
     return (
@@ -38,7 +38,7 @@ export default function Editor() {
             <div
                 className='markdown-viewer w-full h-[40rem] xl:h-[45.5rem] font-sans border border-brand-gray/20 rounded-lg p-4 overflow-auto'
                 dangerouslySetInnerHTML={{
-                    __html: md.render(content),
+                    __html: md.render(content)
                 }}
             ></div>
         </div>

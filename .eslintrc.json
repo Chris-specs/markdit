@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["ts-standard", "next/core-web-vitals"],
+  "rules": {
+    "indent": [ "warn", 4 ],
+    "space-before-function-paren": "off"
+  }
 }
