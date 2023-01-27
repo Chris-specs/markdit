@@ -25,8 +25,8 @@ export default function Editor() {
     }
 
     return (
-        <div className='flex flex-col lg:flex-row items-center gap-6 py-6'>
-            <div className='w-full h-[40rem] xl:h-[45.5rem] rounded-lg overflow-hidden border border-brand-gray/20'>
+        <div className='w-full h-full flex flex-col lg:flex-row items-center gap-6 py-6'>
+            <div className='w-full h-full rounded-lg overflow-hidden border border-brand-gray/20'>
                 <MonacoEditor
                     height='100%'
                     theme='vs-dark'
@@ -36,11 +36,11 @@ export default function Editor() {
                 />
             </div>
             <div
-                className='markdown-viewer w-full h-[40rem] xl:h-[45.5rem] font-sans border border-brand-gray/20 rounded-lg p-4 overflow-auto'
+                className='markdown-viewer w-full h-full font-sans border border-brand-gray/20 rounded-lg p-4 overflow-auto'
                 dangerouslySetInnerHTML={{
                     __html: md.render(content)
                 }}
-            ></div>
+            />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 class MDContentSingleton {
-    content: string = '# Title'
+    content = '# Title'
 
     getMDContent () {
         return this.content
