@@ -1,16 +1,14 @@
 'use client'
 
-// Common
-import { useState } from 'react'
+// Context
+import { useContent } from '@context/Content'
 // Monaco Editor
 import MonacoEditor from '@monaco-editor/react'
 // Markdown
 import MarkdownIt from 'markdown-it'
-// Utils
-import MDContent from '@utils/state'
 
 export default function Editor() {
-    const [content, setContent] = useState('# Title')
+    const [content, setContent] = useContent()
 
     const md = new MarkdownIt({
         html: true,
@@ -21,7 +19,6 @@ export default function Editor() {
 
     const handleChange = (value: string | undefined) => {
         setContent(value || '')
-        MDContent.setMDContent(value || '')
     }
 
     return (
