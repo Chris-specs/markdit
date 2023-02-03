@@ -1,14 +1,16 @@
 // Common
 import Link from 'next/link'
+// Context
+import { ContentProvider } from '@context/Content'
 // Components
 import InnerContainer from '@components/layout/InnerContainer'
+import DownloadButton from '@components/layout/DownloadButton'
 import Logo from '@components/svg/Logo'
 import GitHub from '@components/svg/GitHub'
 // Fonts
 import { Inter } from '@next/font/google'
 // Styles
 import '../styles/globals.sass'
-import DownloadButton from '@components/layout/DownloadButton'
 
 const inter = Inter({
     variable: '--font-inter',
@@ -63,13 +65,15 @@ export default function RootLayout({ children }: Layout) {
         <html lang='en' className={inter.variable}>
             <head />
             <body>
-                <Header />
-                <main>
-                    <InnerContainer>
-                        {children}
-                    </InnerContainer>
-                </main>
-                <Footer />
+                <ContentProvider>
+                    <Header />
+                    <main>
+                        <InnerContainer>
+                            {children}
+                        </InnerContainer>
+                    </main>
+                    <Footer />
+                </ContentProvider>
             </body>
         </html>
     )
